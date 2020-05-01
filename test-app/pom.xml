@@ -31,10 +31,11 @@
 						<password>${password}</password>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<environment>${env}</environment>	
+						<environment>Sandbox</environment>
+						<server>anypoint</server>
 						<muleVersion>4.2.2</muleVersion>	
 						<uri>https://anypoint.mulesoft.com</uri>
-						<applicationName>{appname}</applicationName>
+						<applicationName>test-app</applicationName>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
 							<key>value</key>
