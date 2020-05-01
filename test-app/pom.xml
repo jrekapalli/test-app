@@ -35,7 +35,7 @@
 						<server>anypoint</server>
 						<muleVersion>4.2.2</muleVersion>	
 						<uri>https://anypoint.mulesoft.com</uri>
-						<applicationName>test-app</applicationName>
+						<applicationName>test-app-rekapalli</applicationName>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
 							<key>value</key>
