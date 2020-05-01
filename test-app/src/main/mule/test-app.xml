@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ea8bf63b-3360-4e54-a059-af52ddea17af" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="test-appFlow" doc:id="ea5eb3d0-9cc3-4a94-b660-97aab5af9159" >
+		<http:listener doc:name="Listener" doc:id="77b10904-fa06-43da-814a-cb46da39f113" config-ref="HTTP_Listener_config" path="/test"/>
+		<logger level="INFO" doc:name="Logger" doc:id="38098d9b-6ea6-447d-8e69-5556b3f5e880" message="Hello this is Mule Demo of Azure Devops"/>
+		<set-payload value="Hello this is Mule Demo of Azure Devops" doc:name="Set Payload" doc:id="e13788b6-5ca7-44a0-b3d2-87080d3addf8" />
+	</flow>
+</mule>
